@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/all.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="assets/sass/style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <title>JugozHairs  - Online Beauty Salon</title>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .welcome{
+
+            text-align: center;
+            height: auto;
+           }
+           h1{
+            margin-top: 40px;
+           }
+           h3{
+            margin-top: 10px;
+           }
+           table{
+              width: 15%;
+              margin-left: 250px;
+              margin-top: 70px;
+              /* background-color: red; */
+            }
+           th{
+              padding: 5px;
+            }
+            td{
+              text-align: center;
+              padding: 5px;
+              text-transform: none;
+    
+            }
+            td i{
+               font-size: 11px;
+            }
+            td span{
+                color: #ff4d6d;
+            }
+            .dashboard{
+                display: flex;
+            }
+            .box{
+                width: 50%;
+                height: 34vh;
+                background: silver;
+                border: 1px solid silver;
+                border-radius: 10px;
+                margin-top: 70px;
+                margin-left: 30px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .box1{
+                width: 30%;
+                height: 15vh;
+                background: transparent;
+                margin-top: 65px;
+                margin-left: 20px;
+                border: 1px solid #ff4d6d;
+                border-radius: 10px;
+            }
+            .box1 h6{
+                margin-top: 30px;
+                margin-left: 15px;
+            }
+            .box1 i{
+                margin-left:170px;
+                margin-top: 10px;
+            }
+            .box2{
+                width: 30%;
+                height: 15vh;
+                margin-top: 65px;
+                background: transparent;
+                border: 1px solid #ff4d6d;
+                border-radius: 10px;
+            }
+            .box2 h6{
+                margin-top: 30px;
+                margin-left: 15px;
+            }
+            .box2 i{
+                margin-left:170px;
+                margin-top: 10px;
+            }
+            .box3{
+                width: 30%;
+                height: 15vh;
+                margin-top: 65px;
+                margin-right: 20px;
+                background: transparent;
+                border: 1px solid #ff4d6d;
+                border-radius: 10px;
+            }
+            .box3 h6{
+                margin-top: 30px;
+                margin-left: 15px;
+            }
+            .box3 i{
+                margin-left:170px;
+                margin-top: 10px;
+            }
+
+            /* @media(max-width: 991px){
+                .dashboard{
+                  display: flex;
+                  flex-direction: column;
+                  height: 90vh;
+               }
+               .box{
+                    width: 50%;
+                    height: 34vh;
+                    background: silver;
+                    border: 1px solid silver;
+                    border-radius: 10px;
+                    margin-top: 70px;
+                    margin-left: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                table{
+                  width: 25%;
+                 margin-left: 250px;
+                margin-top: 70px;
+            
+               }
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="welcome">
+            <h1>Welcome <span id="fname"></span></h1>
+            <h3>Your registration with this email: <span id="mail"></span> was successful</h3>
+            <!-- <img src="./image/undraw_reminder_re_fe15.svg" width="20%" alt="mobile"> -->
+        </div>
+        <div class="dashboard">
+            <table border="1">
+               <tr>
+                  <th></th>
+                  <th></th>
+               </tr>
+                <tr>
+                    <td><i class="fas fa-lock"> dashboard</i></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-envelope"> message-inbox</i></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-user"> my profile</i></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-toolbox"> my booking</i></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-bars"> my invoice</i></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-lock"> change password</i></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-caret-right"><a href="index.html"><span> Logout</span></a></i></td>
+                </tr>
+                
+            </table>
+            <div class="box">
+                <div class="box1">
+                    <i class="fas fa-box"></i>
+                    <h6>Inbox</h6>
+                </div>
+                <div class="box2">
+                    <i class="fas fa-envelope"></i>
+                    <h6>Unread msg</h6>
+                </div>
+                <div class="box3">
+                    <i class="fas fa-toolbox"></i>
+                    <h6>Total sent mail</h6>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Main JS -->
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Counter up -->
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- Popper JS -->
+        <script src="assets/js/popper.min.js"></script>
+        <!-- Magnific JS -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!-- Waypoints JS -->
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <!-- Mean menu -->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!-- Custom JS -->
+        <script src="assets/js/custom.js"></script>
+
+
+        <script>
+
+            window.addEventListener('load', () => {
+                let fname = localStorage.getItem('FULLNAME');
+                let email = localStorage.getItem('EMAIL');
+                   
+                    document.getElementById('fname').innerHTML = fname;
+                    document.getElementById('mail').innerHTML = email;
+                    
+            })
+        </script>
+ 
+    </body>
+</html>
